@@ -23,7 +23,7 @@ slab   = { git = "https://github.com/carllerche/slab", rev = "5476efcafb"  }
 net2   = { version = "0.2.19", default-features = false }
 
 [target.'cfg(unix)'.dependencies]
-nix    = "0.6.0"
+nix    = { git = "https://github.com/nix-rust/nix.git", branch = "master" }
 libc   = "0.2.4"
 
 [target.'cfg(windows)'.dependencies]
